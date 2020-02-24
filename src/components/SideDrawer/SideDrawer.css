@@ -1,0 +1,37 @@
+.side-drawer {
+  height: 100%;
+  background: white;
+  -webkit-box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+}
+
+.side-drawer .toolbar-navigation-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+.side-drawer .toolbar-navigation-items a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.side-drawer .toolbar-navigation-items a :hover {
+  border-bottom: 1px solid black;
+  color: #c3a9ee;
+}
+/*# sourceMappingURL=SideDrawer.css.map */
