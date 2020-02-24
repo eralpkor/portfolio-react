@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import desktopImage from './img/bg-masthead.jpg';
+import mobileImage from './img/bg-masthead.jpg';
+import Navbar from './components/Navbar/Navbar.jsx';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import BackDrop from './components/BackDrop/BackDrop';
+
 function App() {
+  const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <SideDrawer />
+      <BackDrop />
+
+      <main style={{marginTop: '0px'}}>
+        <div className="App" style={{backgroundImage: `url(${imageUrl})`}}>
+          <h1>Hello</h1>
+        </div>
+      </main>
+      
     </div>
+    
   );
 }
 
 export default App;
+
