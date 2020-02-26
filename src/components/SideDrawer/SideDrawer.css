@@ -12,6 +12,7 @@
 }
 
 .side-drawer .toolbar-navigation-items {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,15 +23,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 4rem;
+  margin-left: 1rem;
+  list-style: none;
 }
 
 .side-drawer .toolbar-navigation-items a {
+  margin: 0.5rem 0;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.side-drawer .toolbar-navigation-items a :hover {
+.side-drawer .toolbar-navigation-items a:hover,
+.side-drawer .toolbar-navigation-items a:active {
   border-bottom: 1px solid black;
   color: #c3a9ee;
 }
