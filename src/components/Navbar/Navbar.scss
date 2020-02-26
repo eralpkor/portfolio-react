@@ -11,6 +11,8 @@
 
 .navbar-logo {
   margin-left: 1rem;
+  border-radius: 50%;
+  transition: transform .8s easy-in-out;
 }
 
 .spacer {
